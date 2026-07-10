@@ -1,0 +1,57 @@
+=== Manual Review of Scanner Leads ===
+
+Target: 192.168.198.128
+
+=== Apache /info.php ===
+Result: HTTP 200 OK
+Server: Apache/2.4.52 (Ubuntu)
+Observation: phpinfo() page is publicly reachable.
+Version observed: PHP 8.1.2-1ubuntu2.14
+Risk note: phpinfo() can expose configuration details and should not be publicly available.
+
+=== Apache /server-status ===
+Result: HTTP 200 OK
+Server: Apache/2.4.52 (Ubuntu)
+Observation: Apache server-status page is publicly reachable.
+Details observed:
+- Apache/2.4.52 (Ubuntu)
+- OpenSSL/3.0.2
+- Server MPM: prefork
+Risk note: server-status can expose operational details about the web server.
+
+=== Apache /webdav/ ===
+Result: HTTP 200 OK
+Server: Apache/2.4.52 (Ubuntu)
+Observation: WebDAV path is reachable.
+Risk note: WebDAV should be reviewed for unnecessary exposure and write permissions.
+
+=== Juice Shop /robots.txt ===
+Result: HTTP 200 OK
+Content:
+User-agent: *
+Disallow: /ftp
+
+Observation: robots.txt discloses the /ftp path.
+
+=== Juice Shop /ftp ===
+Result: HTTP 200 OK
+Observation: Directory listing is reachable at /ftp.
+Visible entries included:
+- quarantine/
+- acquisitions.md
+- announcement_encrypted.md
+- coupons_2013.md.bak
+- eastere.gg
+- encrypt.pyc
+- incident-support.kdbx
+- legal.md
+
+Risk note: Exposed file listings can reveal backup files, internal documents, compiled files, and other sensitive artifacts.
+
+=== Manual Review Result ===
+The scanner leads were valid enough for follow-up documentation. The strongest review items are:
+- Public phpinfo() page
+- Public Apache server-status page
+- Reachable WebDAV path
+- robots.txt disclosure of /ftp
+- Juice Shop /ftp directory listing

@@ -36,7 +36,8 @@ The project follows a PTES-style workflow:
 | 02 | HTTP, methodology, and traffic capture | Complete |
 | 03 | Footprinting and service enumeration | Complete |
 | 04 | Vulnerability testing with web scanners | Complete |
-| 05 | Manual review of scanner leads | Not started |
+| 05 | Manual review of scanner leads | Complete |
+| 06 | Cryptographic failures | Not started |
 
 ## Ethics Statement
 
