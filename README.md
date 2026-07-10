@@ -38,7 +38,8 @@ The project follows a PTES-style workflow:
 | 04 | Vulnerability testing with web scanners | Complete |
 | 05 | Manual review of scanner leads | Complete |
 | 06 | Cryptographic failures | Complete |
-| 07 | Injection attacks | Not started |
+| 07 | Injection attacks | Complete |
+| 08 | Cross-site scripting | Not started |
 
 ## Ethics Statement
 

@@ -1,0 +1,30 @@
+=== DVWA SQL Injection Observation ===
+
+Target:
+http://192.168.198.128/DVWA/vulnerabilities/sqli/
+
+Application:
+DVWA
+
+Security level:
+low
+
+Normal request:
+id=1
+Rows returned: 1
+
+Injected request:
+id=1' OR '1'='1
+Rows returned: 5
+
+Counting method:
+Occurrences of 'First name' were counted with grep -o and wc -l.
+
+Interpretation:
+The injected condition returned more rows than the normal request.
+The normal request returned one matching user record.
+The injected request changed the SQL logic and returned five user records.
+This indicates SQL injection behavior in the local DVWA lab.
+
+Evidence handling:
+Raw HTML responses, cookies, and session tokens were stored only in a temporary directory and are not committed.
