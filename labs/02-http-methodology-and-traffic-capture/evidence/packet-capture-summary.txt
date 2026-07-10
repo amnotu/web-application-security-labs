@@ -1,0 +1,26 @@
+=== Packet capture file ===
+-rw-r--r-- 1 tcpdump tcpdump 4.8K Jul 10 10:24 labs/02-http-methodology-and-traffic-capture/evidence/juiceshop-basic-http.pcap
+
+=== Packet capture summary ===
+reading from file labs/02-http-methodology-and-traffic-capture/evidence/juiceshop-basic-http.pcap, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144
+Warning: interface names might be incorrect
+10:24:19.971329 eth0  Out IP 192.168.68.131.34208 > 192.168.198.128.3000: Flags [S], seq 646333722, win 64240, options [mss 1460,sackOK,TS val 1027215137 ecr 0,nop,wscale 9], length 0
+10:24:19.972192 eth0  In  IP 192.168.198.128.3000 > 192.168.68.131.34208: Flags [S.], seq 1464883, ack 646333723, win 64240, options [mss 1460], length 0
+10:24:19.972217 eth0  Out IP 192.168.68.131.34208 > 192.168.198.128.3000: Flags [.], ack 1, win 64240, length 0
+10:24:19.972321 eth0  Out IP 192.168.68.131.34208 > 192.168.198.128.3000: Flags [P.], seq 1:86, ack 1, win 64240, length 85
+10:24:19.972520 eth0  In  IP 192.168.198.128.3000 > 192.168.68.131.34208: Flags [.], ack 86, win 64240, length 0
+10:24:19.974159 eth0  In  IP 192.168.198.128.3000 > 192.168.68.131.34208: Flags [P.], seq 1:467, ack 86, win 64240, length 466
+10:24:19.974173 eth0  Out IP 192.168.68.131.34208 > 192.168.198.128.3000: Flags [.], ack 467, win 63784, length 0
+10:24:19.974291 eth0  Out IP 192.168.68.131.34208 > 192.168.198.128.3000: Flags [F.], seq 86, ack 467, win 63784, length 0
+10:24:19.974390 eth0  In  IP 192.168.198.128.3000 > 192.168.68.131.34208: Flags [.], ack 87, win 64239, length 0
+10:24:19.974746 eth0  In  IP 192.168.198.128.3000 > 192.168.68.131.34208: Flags [FP.], seq 467, ack 87, win 64239, length 0
+10:24:19.974755 eth0  Out IP 192.168.68.131.34208 > 192.168.198.128.3000: Flags [.], ack 468, win 63784, length 0
+10:24:19.979128 eth0  Out IP 192.168.68.131.34210 > 192.168.198.128.3000: Flags [S], seq 3647058997, win 64240, options [mss 1460,sackOK,TS val 2420426617 ecr 0,nop,wscale 9], length 0
+10:24:19.980202 eth0  In  IP 192.168.198.128.3000 > 192.168.68.131.34210: Flags [S.], seq 1046703915, ack 3647058998, win 64240, options [mss 1460], length 0
+10:24:19.980225 eth0  Out IP 192.168.68.131.34210 > 192.168.198.128.3000: Flags [.], ack 1, win 64240, length 0
+10:24:19.980307 eth0  Out IP 192.168.68.131.34210 > 192.168.198.128.3000: Flags [P.], seq 1:85, ack 1, win 64240, length 84
+10:24:19.980431 eth0  In  IP 192.168.198.128.3000 > 192.168.68.131.34210: Flags [.], ack 85, win 64240, length 0
+10:24:19.981776 eth0  In  IP 192.168.198.128.3000 > 192.168.68.131.34210: Flags [P.], seq 1:2454, ack 85, win 64240, length 2453
+10:24:19.981793 eth0  Out IP 192.168.68.131.34210 > 192.168.198.128.3000: Flags [.], ack 2454, win 65535, length 0
+10:24:19.981890 eth0  Out IP 192.168.68.131.34210 > 192.168.198.128.3000: Flags [F.], seq 85, ack 2454, win 65535, length 0
+10:24:19.982075 eth0  In  IP 192.168.198.128.3000 > 192.168.68.131.34210: Flags [.], ack 86, win 64239, length 0

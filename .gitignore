@@ -26,3 +26,7 @@ create.zip
 create.sql
 **/create.zip
 **/create.sql
+
+# Packet captures can contain sensitive traffic
+*.pcap
+*.pcapng

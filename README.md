@@ -33,7 +33,7 @@ The project follows a PTES-style workflow:
 |---|---|---|
 | 00 | Environment setup and connectivity | Complete |
 | 01 | Foundations: SQL, HTML, JavaScript, and DOM | Complete |
-| 02 | HTTP, methodology, and traffic capture | Not started |
+| 02 | HTTP, methodology, and traffic capture | Complete |
 
 ## Ethics Statement
 
