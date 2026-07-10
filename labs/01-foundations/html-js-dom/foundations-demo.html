@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Foundations Demo</title>
+</head>
+<body>
+  <h1 id="title">Foundations Demo</h1>
+
+  <p>This page is a local HTML, JavaScript, and DOM practice file.</p>
+
+  <label for="nameInput">Enter a test value:</label>
+  <input id="nameInput" type="text" value="Kali Lab">
+
+  <button id="updateButton">Update page</button>
+
+  <p id="output">Output will appear here.</p>
+
+  <script>
+    const button = document.getElementById("updateButton");
+    const input = document.getElementById("nameInput");
+    const output = document.getElementById("output");
+    const title = document.getElementById("title");
+
+    button.addEventListener("click", function () {
+      const value = input.value;
+      output.textContent = "JavaScript read the input value: " + value;
+      title.textContent = "DOM updated by JavaScript";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+
+# Sensitive files
+*.key
+*.pem
+*.p12
+*.pfx
+.env
+secrets.*
+credentials.*
+
+# Course-provided lab files and extracted SQL data
+create.zip
+create.sql
+**/create.zip
+**/create.sql

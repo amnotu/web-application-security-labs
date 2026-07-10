@@ -1,0 +1,72 @@
+=== 1. List tables ===
+Tables_in_pencourse
+customer
+item
+order
+product
+
+=== 2. Basic SELECT: product inventory sample ===
+id	brand	price	stock
+1	HyperTech	499.99	120
+2	HyperTech	129.99	150
+3	HyperTech	79.99	200
+4	HyperTech	249.99	85
+5	HyperTech	329.99	60
+6	HyperTech	59.99	200
+7	HyperTech	89.99	150
+8	HyperTech	129.99	90
+9	HyperTech	89.99	180
+10	HyperTech	99.99	130
+
+=== 3. WHERE filter: products over 100 NOK/USD lab currency ===
+id	brand	price	stock
+1	HyperTech	499.99	120
+36	FlashForce	499.99	75
+28	RyzaTech	399.99	45
+5	HyperTech	329.99	60
+4	HyperTech	249.99	85
+25	RyzaTech	199.99	100
+20	VoltTech	159.99	70
+33	RyzaTech	149.99	75
+2	HyperTech	129.99	150
+8	HyperTech	129.99	90
+
+=== 4. Aggregate query: product count by brand ===
+brand	product_count	average_price
+HyperTech	10	175.99
+RyzaTech	10	117.99
+TechXtreme	8	64.99
+VoltTech	6	74.99
+FlashForce	5	189.99
+
+=== 5. Aggregate query: customer count by country only ===
+country	customer_count
+Norway	20
+
+=== 6. JOIN query: order totals without customer personal data ===
+order_id	customer_id	item_count	total
+1	1	2	574.98
+2	2	3	414.97
+3	3	1	137.99
+4	4	3	411.97
+5	5	2	621.98
+6	6	2	141.98
+7	7	3	420.97
+8	8	1	499.99
+9	9	3	464.97
+10	10	2	314.98
+
+=== 7. UPDATE practice inside transaction, then rollback ===
+id	brand	stock_before
+1	HyperTech	120
+id	brand	stock_after_update
+1	HyperTech	119
+id	brand	stock_after_rollback
+1	HyperTech	120
+
+=== 8. DELETE practice on temporary table ===
+id	note
+1	temporary row
+2	keep row
+id	note
+2	keep row

@@ -1,0 +1,40 @@
+=== Database tables ===
+Tables_in_pencourse
+customer
+item
+order
+product
+
+=== customer schema ===
+Field	Type	Null	Key	Default	Extra
+id	int(11)	NO	PRI	NULL	auto_increment
+name	varchar(100)	YES		NULL	
+address	varchar(255)	YES		NULL	
+city	varchar(100)	YES		NULL	
+country	varchar(100)	YES		NULL	
+phone	varchar(15)	YES		NULL	
+email	varchar(100)	YES		NULL	
+password	char(64)	YES		NULL	
+
+=== product schema ===
+Field	Type	Null	Key	Default	Extra
+id	int(11)	NO	PRI	NULL	auto_increment
+name	varchar(100)	YES		NULL	
+brand	varchar(100)	YES		NULL	
+price	decimal(10,2)	YES		NULL	
+stock	int(11)	YES		NULL	
+
+=== order schema ===
+Field	Type	Null	Key	Default	Extra
+id	int(11)	NO	PRI	NULL	auto_increment
+customer_id	int(11)	YES	MUL	NULL	
+order_date	date	YES		NULL	
+discount	decimal(10,2)	YES		0.00	
+shipping	decimal(10,2)	YES		0.00	
+total	decimal(10,2)	YES		NULL	
+
+=== item schema ===
+Field	Type	Null	Key	Default	Extra
+order_id	int(11)	NO	PRI	NULL	
+product_id	int(11)	NO	PRI	NULL	
+value	decimal(10,2)	YES		NULL	

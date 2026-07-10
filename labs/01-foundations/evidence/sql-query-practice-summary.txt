@@ -1,0 +1,34 @@
+=== SQL Query Practice Summary ===
+
+Database: pencourse
+
+Tables:
+- customer
+- item
+- order
+- product
+
+Sanitized query types completed:
+- Basic SELECT from product table
+- WHERE filter on product price
+- GROUP BY aggregate count by brand
+- GROUP BY customer count by country only
+- JOIN between order and item without customer personal data
+- UPDATE inside transaction followed by ROLLBACK
+- DELETE using temporary table
+
+Key results:
+- customer rows: 20
+- product rows: 39
+- order rows: 20
+- item rows: 43
+- customer country aggregate: Norway = 20
+- UPDATE rollback confirmed: stock changed from 120 to 119, then returned to 120
+- DELETE test confirmed using temporary table only
+
+Sensitive fields avoided:
+- names
+- addresses
+- phone numbers
+- emails
+- password hashes

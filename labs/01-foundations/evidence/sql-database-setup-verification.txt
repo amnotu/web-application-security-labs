@@ -1,0 +1,24 @@
+=== MariaDB version ===
+VERSION()
+11.8.8-MariaDB-1 from Debian
+
+=== pencourse database check ===
+Database (pencourse)
+pencourse
+
+=== pencourse tables ===
+Tables_in_pencourse
+customer
+item
+order
+product
+
+=== table row counts ===
+table_name	rows_count
+customer	20
+table_name	rows_count
+product	39
+table_name	rows_count
+order	20
+table_name	rows_count
+item	43

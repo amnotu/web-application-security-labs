@@ -1,0 +1,25 @@
+=== HTML, JavaScript, and DOM Summary ===
+
+File tested:
+labs/01-foundations/html-js-dom/foundations-demo.html
+
+What HTML provided:
+- Page structure
+- Heading
+- Paragraph
+- Input field
+- Button
+- Output paragraph
+
+What JavaScript provided:
+- Read the input value
+- Reacted to the button click
+- Changed visible page text
+
+What the DOM showed:
+- JavaScript selected elements by ID
+- JavaScript changed the h1 text
+- JavaScript changed the output paragraph text
+
+Result:
+The local page confirmed the basic relationship between HTML structure, JavaScript behavior, and DOM manipulation.
