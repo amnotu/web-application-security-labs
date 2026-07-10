@@ -37,7 +37,8 @@ The project follows a PTES-style workflow:
 | 03 | Footprinting and service enumeration | Complete |
 | 04 | Vulnerability testing with web scanners | Complete |
 | 05 | Manual review of scanner leads | Complete |
-| 06 | Cryptographic failures | Not started |
+| 06 | Cryptographic failures | Complete |
+| 07 | Injection attacks | Not started |
 
 ## Ethics Statement
 

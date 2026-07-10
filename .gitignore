@@ -30,3 +30,12 @@ create.sql
 # Packet captures can contain sensitive traffic
 *.pcap
 *.pcapng
+
+# Course-provided binary files
+labs/06-cryptographic-failures/evidence/cc
+
+# Course-provided binaries and local crypto-lab raw notes
+labs/06-cryptographic-failures/cc
+labs/06-cryptographic-failures/evidence/*raw*.txt
+labs/06-cryptographic-failures/evidence/*full*.txt
+labs/06-cryptographic-failures/evidence/*local*.txt

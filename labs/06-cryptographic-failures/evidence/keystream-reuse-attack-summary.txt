@@ -1,0 +1,41 @@
+=== Keystream Reuse Attack Summary ===
+
+Program:
+Weak credit card protection simulator
+
+Student:
+Mhd Khalil Arabieh
+
+Observed behavior:
+- The program issues random-looking credit card numbers.
+- The database dump shows encrypted-looking 16-character hexadecimal values.
+- The key check requires 16 hexadecimal characters.
+- Supplying an incorrect key fails.
+- Supplying the recovered keystream decrypts the database.
+
+Method:
+One issued card number was used as known plaintext.
+The matching encrypted database row was used as ciphertext.
+The plaintext card number was encoded as BCD-style hexadecimal.
+The keystream was recovered with XOR:
+
+known_plaintext_bcd XOR matching_ciphertext = keystream
+
+Recovered keystream:
+0627d828616f1f07
+
+Validation:
+The recovered keystream was accepted by the program's key check.
+After entering the recovered keystream, the program displayed:
+"Success!! Congratulations!"
+
+Security explanation:
+The same keystream was reused to protect multiple database entries.
+With one known plaintext and its matching ciphertext, the keystream can be recovered.
+Once the keystream is known, the remaining protected database entries can be decrypted.
+
+Risk:
+Reusing a stream-cipher keystream breaks confidentiality. The protection fails if an attacker can obtain one plaintext/ciphertext pair.
+
+Public evidence note:
+The full decrypted card list is intentionally not included in this repository because the values resemble payment card numbers, even though they are lab-generated.
