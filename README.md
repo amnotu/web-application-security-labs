@@ -34,6 +34,8 @@ The project follows a PTES-style workflow:
 | 00 | Environment setup and connectivity | Complete |
 | 01 | Foundations: SQL, HTML, JavaScript, and DOM | Complete |
 | 02 | HTTP, methodology, and traffic capture | Complete |
+| 03 | Footprinting and service enumeration | Complete |
+| 04 | Vulnerability testing with web scanners | Not started |
 
 ## Ethics Statement
 
