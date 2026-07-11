@@ -32,8 +32,8 @@ The project follows a PTES-style workflow:
 | Lab | Topic | Status |
 |---|---|---|
 | [00](labs/00-lab-setup) | Environment setup and connectivity | Complete |
-| 01 | Foundations: SQL, HTML, JavaScript, and DOM | Complete |
-| 02 | HTTP, methodology, and traffic capture | Complete |
+| [01](labs/01-foundations) | Foundations: SQL, HTML, JavaScript, and DOM | Complete |
+| [02](labs/02-http-methodology-and-traffic-capture) | HTTP, methodology, and traffic capture | Complete |
 | 03 | Footprinting and service enumeration | Complete |
 | 04 | Vulnerability testing with web scanners | Complete |
 | 05 | Manual review of scanner leads | Complete |
