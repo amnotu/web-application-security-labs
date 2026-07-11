@@ -67,7 +67,7 @@ The application reflected user-controlled input back into the HTML response as e
 | Evidence | What it shows |
 |---|---|
 | [`dvwa-reflected-xss-summary.txt`](evidence/dvwa-reflected-xss-summary.txt) | Public-safe reflected XSS behavior summary. |
-| [`01-dvwa-reflected-xss-summary.png`](main/assets/screenshots/08-cross-site-scripting/01-dvwa-reflected-xss-summary.png) | Screenshot of the reflected XSS observation summary. |
+| [`01-dvwa-reflected-xss-summary.png`](../../web-application-security-labs/assets/screenshots/08-cross-site-scripting/01-dvwa-reflected-xss-summary.png) | Screenshot of the reflected XSS observation summary. |
 
 Screenshot location:
 
