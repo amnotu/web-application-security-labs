@@ -39,7 +39,8 @@ The project follows a PTES-style workflow:
 | 05 | Manual review of scanner leads | Complete |
 | 06 | Cryptographic failures | Complete |
 | 07 | Injection attacks | Complete |
-| 08 | Cross-site scripting | Not started |
+| 08 | Cross-site scripting | Complete |
+| 09 | Identification and authentication failures | Not started |
 
 ## Ethics Statement
 

@@ -1,0 +1,27 @@
+=== DVWA Reflected XSS Observation ===
+
+Target:
+http://192.168.198.128/DVWA/vulnerabilities/xss_r/
+
+Application:
+DVWA
+
+Security level:
+low
+
+Payload used:
+<script>alert("xss-lab")</script>
+
+Encoded request value:
+%3Cscript%3Ealert%28%22xss-lab%22%29%3C/script%3E
+
+Reflection check:
+Exact payload occurrences in response: 1
+
+Interpretation:
+The script payload was reflected into the response without output encoding.
+This indicates reflected XSS behavior in the local DVWA lab.
+
+Evidence handling:
+Raw HTML responses, cookies, and session tokens were stored only in a temporary directory and are not committed.
+The payload is benign and does not access cookies, tokens, browser history, or external systems.
