@@ -57,9 +57,10 @@ The response headers also showed common web server headers such as:
 A verbose `curl` request was used to observe the request and response flow. This helped confirm the direction of traffic between the tester VM and the target web application.
 
 Command used:
-``bash
+````bash
 curl -v http://192.168.198.128:3000 -o /dev/null
-``
+````
+
 ## Part 3: Packet Capture
 
 A short packet capture was created while sending HTTP requests to Juice Shop.
