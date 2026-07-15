@@ -1,11 +1,13 @@
 # Reports
 
-This folder is for report-style material from the lab.
+This folder contains public-safe reports created from the local web application security labs.
 
-The final reporting work is in:
+## Available Reports
 
-`labs/12-reporting-and-cvss/`
+- [Web Application Security Lab Report](web-application-security-lab-report.md)
 
-That lab includes a public report summary and a CVSS worksheet.
+## Notes
 
-I kept the report public-safe. It summarizes the findings without including cookies, tokens, passwords, raw packet captures, full decrypted values, or course-provided binaries.
+The reports summarize the lab work without publishing sensitive artifacts.
+
+Raw cookies, tokens, credentials, packet captures, course-provided binaries, and unnecessary raw outputs are not included.
