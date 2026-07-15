@@ -96,12 +96,6 @@ This confirms that the traffic was sent from the Kali VM through its active netw
 
 ## Evidence
 
-## Evidence
-
-
-
-| Evidence                                                                                                                                            |                                                                 ## Evidence
-
 | Evidence | What it shows |
 
 |---|---:|
