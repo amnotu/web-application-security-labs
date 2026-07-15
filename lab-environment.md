@@ -10,7 +10,7 @@ The lab runs on a Windows 11 host using VMware Workstation Pro.
 
 The attacker machine is Kali Linux.
 
-Kali was used for terminal work, HTTP checks, traffic capture, scanning, and documentation.
+Kali was used for terminal work, HTTP checks, traffic capture, scanning, documentation and commiting to GitHub.
 
 ## Target VM
 
