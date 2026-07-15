@@ -157,8 +157,8 @@ Open the HTML/JavaScript/DOM demo:
 
 | Evidence | What it shows |
 |---|---|
-| `sql-database-setup-verification.txt` | MariaDB version, database check, table list, and row counts. |
-| `sql-schema-review.txt` | Table names and column structure. |
+| [`sql-database-setup-verification.txt`](evidence/sql-database-setup-verification.txt) | MariaDB version, database check, table list, and row counts. |
+| [`sql-schema-review.txt`](evidence/sql-schema-review.txt) | Table names and column structure. |
 | `sql-query-practice.txt` | Full sanitized SQL query-practice output. |
 | `sql-query-practice-summary.txt` | Short summary suitable for screenshot evidence. |
 | `html-js-dom-summary.txt` | Summary of the local HTML, JavaScript, and DOM test. |
