@@ -108,11 +108,7 @@ This confirms that the traffic was sent from the Kali VM through its active netw
 
 | [`02-packet-capture-summary.png`](../../assets/screenshots/02-http-methodology-and-traffic-capture/02-packet-capture-summary.png) | Screenshot of packet capture summary evidence. |
 
-
-
-Local-only evidence:
-
-`labs/02-http-methodology-and-traffic-capture/evidence/`
+| Local-only evidence: | `Localy/labs/02-http-methodology-and-traffic-capture/evidence/.pcap & .pcapng`. |
 
 
 ## Security Notes
