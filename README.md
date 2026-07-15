@@ -12,9 +12,9 @@ All testing is performed inside a local lab environment. No public systems, thir
 
 | Application | Purpose |
 |---|---|
-| OWASP Juice Shop | Modern vulnerable web application for web security testing |
+| [OWASP Juice Shop](https://github.com/juice-shop/juice-shop#from-sources) | Modern vulnerable web application for web security testing |
 | [DVWA](https://github.com/digininja/DVWA) | Vulnerable PHP/MySQL application for common web vulnerability practice |
-| bWAPP | Buggy web application used to test a wide range of web vulnerabilities |
+| [bWAPP](https://sourceforge.net/projects/bwapp/) | Buggy web application used to test a wide range of web vulnerabilities |
 
 ## Methodology
 
