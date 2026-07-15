@@ -1,0 +1,43 @@
+=== Clickjacking Header Review Summary ===
+
+Purpose:
+Review whether local lab web applications return clickjacking-related headers.
+
+Headers checked:
+- X-Frame-Options
+- Content-Security-Policy frame-ancestors
+
+=== Target: http://192.168.198.128/ ===
+HTTP result: HTTP/1.1 200 OK
+Server: Apache/2.4.52 (Ubuntu)
+X-Frame-Options: not present
+Content-Security-Policy: not present
+Clickjacking control observed: none in checked headers
+
+=== Target: http://192.168.198.128/DVWA/ ===
+HTTP result: HTTP/1.1 200 OK
+Server: Apache/2.4.52 (Ubuntu)
+X-Frame-Options: not present
+Content-Security-Policy: not present
+Clickjacking control observed: none in checked headers
+
+=== Target: http://192.168.198.128/bWAPP/ ===
+HTTP result: HTTP/1.1 200 OK
+Server: Apache/2.4.52 (Ubuntu)
+X-Frame-Options: not present
+Content-Security-Policy: not present
+Clickjacking control observed: none in checked headers
+
+=== Target: http://192.168.198.128:3000/ ===
+HTTP result: HTTP/1.1 200 OK
+Server: not shown
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: not present
+Clickjacking control observed: X-Frame-Options
+
+Interpretation:
+Applications without X-Frame-Options or CSP frame-ancestors may be frameable by another site.
+This can increase clickjacking risk if sensitive actions are available in the framed interface.
+
+Evidence handling:
+Only response headers were recorded. No cookies, tokens, credentials, or page bodies are committed.
