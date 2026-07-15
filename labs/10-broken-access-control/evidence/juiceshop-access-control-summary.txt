@@ -1,0 +1,49 @@
+=== Juice Shop Broken Access Control Observation ===
+
+Target:
+http://192.168.198.128:3000
+
+Authentication state:
+No login session or authentication token was used.
+
+robots.txt result:
+User-agent: *
+Disallow: /ftp
+
+/ftp directory check:
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+
+Observation:
+The /ftp path was disclosed by robots.txt and was reachable without authentication.
+The response contained a directory listing.
+
+/ftp directory entries observed:
+- quarantine/
+- acquisitions.md
+- announcement_encrypted.md
+- coupons_2013.md.bak
+- eastere.gg
+- encrypt.pyc
+- incident-support.kdbx
+- legal.md
+- package.json.bak
+- suspicious_errors.yml
+
+Selected resource status checks:
+/ftp/acquisitions.md -> HTTP 200 | Content-Type: text/markdown
+/ftp/coupons_2013.md.bak -> HTTP 403 | Content-Type: text/html
+/ftp/eastere.gg -> HTTP 403 | Content-Type: text/html
+/ftp/encrypt.pyc -> HTTP 403 | Content-Type: text/html
+/ftp/incident-support.kdbx -> HTTP 200 | Content-Type: application/octet-stream
+/ftp/legal.md -> HTTP 200 | Content-Type: text/markdown
+
+Interpretation:
+The application exposed an unauthenticated directory listing.
+Several internal-looking resources were visible by filename.
+Some selected files were directly accessible without authentication.
+File contents were not downloaded or committed.
+
+Evidence handling:
+Only status codes, content types, and public path names are recorded.
+No cookies, tokens, credentials, or file contents are committed.

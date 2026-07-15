@@ -41,7 +41,8 @@ The project follows a PTES-style workflow:
 | 07 | Injection attacks | Complete |
 | 08 | Cross-site scripting | Complete |
 | 09 | Identification and authentication failures | Complete |
-| 10 | Broken access control | Not started |
+| 10 | Broken access control | Complete |
+| 11 | Miscellaneous web vulnerabilities | Not started |
 
 ## Ethics Statement
 
