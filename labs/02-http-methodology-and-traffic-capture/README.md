@@ -99,15 +99,10 @@ This confirms that the traffic was sent from the Kali VM through its active netw
 | Evidence | What it shows |
 
 |---|---:|
-
 | [`http-juiceshop-curl-observation.txt`](evidence/http-juiceshop-curl-observation.txt) | HTTP headers and verbose curl request/response flow. |
-
 | [`packet-capture-summary.txt`](evidence/packet-capture-summary.txt) | Safe summary of captured TCP traffic to Juice Shop. |
-
 | [`01-http-juiceshop-curl-observation.png`](../../assets/screenshots/02-http-methodology-and-traffic-capture/01-http-juiceshop-curl-observation.png) | Screenshot of HTTP curl observation evidence. |
-
 | [`02-packet-capture-summary.png`](../../assets/screenshots/02-http-methodology-and-traffic-capture/02-packet-capture-summary.png) | Screenshot of packet capture summary evidence. |
-
 | Local-only evidence: | `Localy/labs/02-http-methodology-and-traffic-capture/evidence/.pcap & .pcapng`. |
 
 ## Security Notes
