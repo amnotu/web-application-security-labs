@@ -164,31 +164,9 @@ firefox labs/01-foundations/html-js-dom/foundations-demo.html
 | [`html-js-dom-summary.txt`](evidence/html-js-dom-summary.txt) | Summary of the local HTML, JavaScript, and DOM test. |
 | [`foundations-demo.html`](html-js-dom/foundations-demo.html) | Local demo page used for HTML, JavaScript, and DOM review. |
 | [`01-sql-database-loaded-and-tables-verified.png`](../../assets/screenshots/01-foundations/01-sql-database-loaded-and-tables-verified.png) | Screenshot showing the database was loaded and verified. |
-| `02-sql-query-practice-summary.png` | Screenshot showing the SQL query-practice summary. |
-| `03-html-js-dom-local-demo.png` | Screenshot showing the local page after JavaScript changed the DOM. |
-| `04-html-js-dom-summary.png` | Screenshot showing the HTML, JavaScript, and DOM summary. |
-
-Screenshot locations:
-
-`assets/screenshots/01-foundations/01-sql-database-loaded-and-tables-verified.png`
-
-`assets/screenshots/01-foundations/02-sql-query-practice-summary.png`
-
-`assets/screenshots/01-foundations/03-html-js-dom-local-demo.png`
-
-`assets/screenshots/01-foundations/04-html-js-dom-summary.png`
-
-Text evidence locations:
-
-`labs/01-foundations/evidence/sql-database-setup-verification.txt`
-
-`labs/01-foundations/evidence/sql-schema-review.txt`
-
-`labs/01-foundations/evidence/sql-query-practice.txt`
-
-`labs/01-foundations/evidence/sql-query-practice-summary.txt`
-
-`labs/01-foundations/evidence/html-js-dom-summary.txt`
+| [`02-sql-query-practice-summary.png`](../../assets/screenshots/01-foundations/02-sql-query-practice-summary.png) | Screenshot showing the SQL query-practice summary. |
+| [`03-html-js-dom-local-demo.png`](../../assets/screenshots/01-foundations/03-html-js-dom-local-demo.png) | Screenshot showing the local page after JavaScript changed the DOM. |
+| [`04-html-js-dom-summary.png`](../../assets/screenshots/01-foundations/04-html-js-dom-summary.png) | Screenshot showing the HTML, JavaScript, and DOM summary. |
 
 ## Observations
 
