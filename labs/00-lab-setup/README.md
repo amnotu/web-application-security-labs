@@ -74,13 +74,13 @@ assets/screenshots/00-lab-setup/
 ````
 
 **Evidence files:**
-````text
-01-shared-folder-mount-and-fstab.png
-02-ping-target-host-only-success.png
-03-curl-juiceshop-http-200.png
-04-curl-dvwa-http-302-login-redirect.png
-05-curl-bwapp-http-302-portal-redirect.png
-````
+
+[01-shared-folder-mount-and-fstab.png](../../assets/screenshots/00-lab-setup/01-shared-folder-mount-and-fstab.png)
+[02-ping-target-host-only-success.png]
+[03-curl-juiceshop-http-200.png]
+[04-curl-dvwa-http-302-login-redirect.png]
+[05-curl-bwapp-http-302-portal-redirect.png]
+
 ## Notes
 
 The testing stayed inside the local VMware lab.
