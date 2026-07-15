@@ -1,27 +1,40 @@
 # Methodology
 
-This project follows a PTES-style workflow. Each lab is documented using the same process so the work stays consistent and easy to review.
+This repo follows a simple PTES-style workflow.
 
-## 1. Scope and Authorization
+I did not try to make the lab look bigger than it is. The work is local, controlled, and focused on learning how to test, verify, document, and explain web application security issues.
 
-Testing is limited to the local VMware lab. No public systems, third-party systems, or production applications are included.
+## Workflow
 
-## 2. Intelligence Gathering
+1. Scope the lab and confirm the targets.
+2. Check basic connectivity.
+3. Inspect HTTP responses.
+4. Capture simple traffic where useful.
+5. Enumerate exposed services and paths.
+6. Run scanners for leads.
+7. Manually check the scanner results.
+8. Validate selected findings safely.
+9. Write the impact and remediation.
+10. Keep unsafe raw evidence out of GitHub.
 
-The tester identifies reachable hosts, exposed services, application URLs, and basic HTTP behavior.
+## How I Treat Findings
 
-## 3. Vulnerability Analysis
+A scanner result is not treated as a confirmed issue by itself.
 
-Application behavior is reviewed through HTTP traffic, input handling, authentication flows, session behavior, access control, and server responses.
+I try to confirm the behavior manually before writing it as a finding. If I only checked a header or saw a possible issue, I label it as limited evidence instead of overstating it.
 
-## 4. Exploitation Validation
+## Evidence
 
-Potential weaknesses are validated only far enough to prove the issue in the local lab. The goal is to confirm impact without unnecessary damage.
+I keep evidence short and readable.
 
-## 5. Reporting
+Most evidence in this repo is made from:
 
-Each lab documents the objective, scope, tools, evidence, observed result, security impact, remediation, and lessons learned.
+- Terminal summaries
+- Screenshots
+- HTTP status codes
+- Response headers
+- Row counts
+- File or path names
+- Short interpretation notes
 
-## 6. Remediation
-
-Each finding should explain how the issue can be fixed and why the recommendation addresses the observed weakness.
+I avoid raw dumps unless they are needed and safe to publish.

@@ -1,10 +1,11 @@
 # Reports
 
-This folder will contain report-style writeups created from the labs.
+This folder is for report-style material from the lab.
 
-Planned files:
+The final reporting work is in:
 
-- sample-findings-report.md
-- mini-pentest-report.md
+`labs/12-reporting-and-cvss/`
 
-Reports should include scope, methodology, findings, evidence, risk, remediation, and conclusion.
+That lab includes a public report summary and a CVSS worksheet.
+
+I kept the report public-safe. It summarizes the findings without including cookies, tokens, passwords, raw packet captures, full decrypted values, or course-provided binaries.

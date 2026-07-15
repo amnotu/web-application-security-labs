@@ -1,31 +1,38 @@
 # Web Application Security Labs
 
-This repository documents a local web application security lab built for hands-on penetration testing practice. The work is based on intentionally vulnerable applications running in a private VMware environment.
+This repo documents my local web application security lab work.
 
-The goal is to document the testing process, evidence, findings, and remediation steps in a clear professional format.
+I built the lab in VMware and used Kali Linux against deliberately vulnerable applications. The point was to practice the full testing process: setup, basic HTTP checks, traffic capture, enumeration, scanner review, manual validation, remediation notes, and final reporting.
+
+I kept the evidence public-safe. I included screenshots, summaries, status codes, row counts, headers, and notes, but I did not commit cookies, tokens, passwords, packet captures, course binaries, or raw sensitive output.
 
 ## Scope
 
-All testing is performed inside a local lab environment. No public systems, third-party applications, or external targets are included.
+All testing was done inside my local lab.
+
+I did not test public systems, third-party apps, or production targets.
 
 ## Lab Applications
 
 | Application | Purpose |
 |---|---|
-| [OWASP Juice Shop](https://github.com/juice-shop/juice-shop#from-sources) | Modern vulnerable web application for web security testing |
-| [DVWA](https://github.com/digininja/DVWA) | Vulnerable PHP/MySQL application for common web vulnerability practice |
-| [bWAPP](https://sourceforge.net/projects/bwapp/) | Buggy web application used to test a wide range of web vulnerabilities |
+| [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/) | Modern vulnerable web application used for web security practice. |
+| [DVWA](https://github.com/digininja/DVWA) | Vulnerable PHP/MySQL application used for common vulnerability testing. |
+| [bWAPP](http://www.itsecgames.com/) | Buggy web application used for different web vulnerability exercises. |
 
 ## Methodology
 
-The project follows a PTES-style workflow:
+I followed a PTES-style workflow:
 
-1. Scope and authorization
-2. Intelligence gathering
-3. Vulnerability analysis
-4. Exploitation validation
-5. Reporting
-6. Remediation
+1. Define the scope
+2. Confirm the lab environment
+3. Inspect HTTP behavior
+4. Capture and review traffic
+5. Enumerate services and web paths
+6. Run scanners and manually check the results
+7. Validate selected findings safely
+8. Write remediation notes
+9. Build a final public report
 
 ## Current Progress
 
@@ -45,13 +52,27 @@ The project follows a PTES-style workflow:
 | [11](labs/11-miscellaneous-web-vulnerabilities) | Miscellaneous web vulnerabilities | Complete |
 | [12](labs/12-reporting-and-cvss) | Reporting and CVSS | Complete |
 
+## Evidence Handling
+
+I try to show enough evidence to prove what happened without publishing material that should stay private.
+
+I do not commit:
+
+- Cookies
+- Tokens
+- Passwords
+- Private keys
+- Raw packet captures
+- Course-provided binaries
+- Full decrypted values
+- Sensitive file contents
+
+For public evidence, I use summaries, screenshots, row counts, HTTP headers, status codes, and remediation notes.
+
+More detail is in [`evidence-handling.md`](evidence-handling.md).
+
 ## Ethics Statement
 
-This repository is for defensive security learning and portfolio documentation. All tests are performed against systems I own or have explicit permission to use. Credentials, cookies, tokens, and sensitive values are removed or redacted before publication.
+This repo is for defensive security learning and portfolio documentation.
 
-## Portfolio Notes
-
-This repository is written for public review. It demonstrates practical testing in a local, authorized lab while avoiding harmful artifacts.
-
-The public evidence uses summaries, screenshots, row counts, headers, status codes, and remediation notes. Raw cookies, session tokens, credentials, packet captures, full decrypted values, and course-provided binaries are not committed.
-
+All tests were performed against systems I own or have explicit permission to use.
