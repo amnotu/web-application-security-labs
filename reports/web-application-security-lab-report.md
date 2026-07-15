@@ -59,7 +59,7 @@ Excluded targets:
 
 The public repository does not include raw sensitive material.
 
-I do not commit:
+I didn't commit:
 
 - Session cookies
 - Authentication tokens
