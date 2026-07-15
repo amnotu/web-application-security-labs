@@ -57,9 +57,9 @@ The response headers also showed common web server headers such as:
 A verbose `curl` request was used to observe the request and response flow. This helped confirm the direction of traffic between the tester VM and the target web application.
 
 Command used:
-
-`curl -v http://192.168.198.128:3000 -o /dev/null`
-
+``bash
+curl -v http://192.168.198.128:3000 -o /dev/null
+``
 ## Part 3: Packet Capture
 
 A short packet capture was created while sending HTTP requests to Juice Shop.
@@ -106,6 +106,7 @@ This confirms that the traffic was sent from the Kali VM through its active netw
 | [`01-http-juiceshop-curl-observation.png`](../../assets/screenshots/02-http-methodology-and-traffic-capture/01-http-juiceshop-curl-observation.png) | Screenshot of HTTP curl observation evidence. |
 
 | [`02-packet-capture-summary.png`](../../assets/screenshots/02-http-methodology-and-traffic-capture/02-packet-capture-summary.png) | Screenshot of packet capture summary evidence. |
+
 
 
 Local-only evidence:
