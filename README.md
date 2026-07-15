@@ -13,7 +13,7 @@ All testing is performed inside a local lab environment. No public systems, thir
 | Application | Purpose |
 |---|---|
 | OWASP Juice Shop | Modern vulnerable web application for web security testing |
-| DVWA | Vulnerable PHP/MySQL application for common web vulnerability practice |
+| [DVWA](https://github.com/digininja/DVWA) | Vulnerable PHP/MySQL application for common web vulnerability practice |
 | bWAPP | Buggy web application used to test a wide range of web vulnerabilities |
 
 ## Methodology
