@@ -1,6 +1,6 @@
 # Methodology
 
-This repo follows a simple PTES-style workflow.
+This repo follows a simple PTES-Mothodology-Style workflow.
 
 I did not try to make the lab look bigger than it is. The work is local, controlled, and focused on learning how to test, verify, document, and explain web application security issues.
 
