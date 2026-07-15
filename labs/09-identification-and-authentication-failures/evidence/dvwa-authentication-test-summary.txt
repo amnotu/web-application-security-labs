@@ -1,0 +1,28 @@
+=== DVWA Authentication Behavior Observation ===
+
+Target:
+http://192.168.198.128/DVWA/login.php
+
+Test approach:
+One known-bad login attempt was compared with one known local-lab default credential login.
+Passwords are redacted from the public summary.
+
+Test label: invalid-login
+Username tested: admin
+Password tested: [redacted in public summary]
+Authentication result: not authenticated
+
+Test label: default-lab-login
+Username tested: admin
+Password tested: [redacted in public summary]
+Authentication result: authenticated
+
+Interpretation:
+The invalid login should remain unauthenticated.
+The known local-lab default credential should authenticate if DVWA is still configured with default credentials.
+
+Security note:
+Default credentials are acceptable in a deliberately vulnerable local lab, but they would be a serious issue in any shared, exposed, or production environment.
+
+Evidence handling:
+Raw HTML, cookies, session files, and tokens were stored only in a temporary directory and are not committed.
