@@ -56,7 +56,7 @@ I followed a PTES-style workflow:
 
 I try to show enough evidence to prove what happened without publishing material that should stay private.
 
-I do not commit:
+I did not commit:
 
 - Cookies
 - Tokens
