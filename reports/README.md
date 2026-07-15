@@ -4,7 +4,7 @@ This folder contains public-safe reports created from the local web application 
 
 ## Available Reports
 
-- [Web Application Security Lab Report](web-application-security-lab-report.md)
+- [Web Application Security Lab Report](web-application-security-lab-report)
 
 ## Notes
 
