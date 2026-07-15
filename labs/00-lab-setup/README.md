@@ -76,9 +76,13 @@ assets/screenshots/00-lab-setup/
 **Evidence files:**
 
 [01-shared-folder-mount-and-fstab.png](../../assets/screenshots/00-lab-setup/01-shared-folder-mount-and-fstab.png)
+
 [02-ping-target-host-only-success.png](../../assets/screenshots/00-lab-setup/02-ping-target-host-only-success.png)
+
 [03-curl-juiceshop-http-200.png](../../assets/screenshots/00-lab-setup/03-curl-juiceshop-http-200.png)
+
 [04-curl-dvwa-http-302-login-redirect.png](../../assets/screenshots/00-lab-setup/04-curl-dvwa-http-302-login-redirect.png)
+
 [05-curl-bwapp-http-302-portal-redirect.png](../../assets/screenshots/00-lab-setup/05-curl-bwapp-http-302-portal-redirect.png)
 
 ## Notes
