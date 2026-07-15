@@ -34,17 +34,24 @@ The project follows a PTES-style workflow:
 | [00](labs/00-lab-setup) | Environment setup and connectivity | Complete |
 | [01](labs/01-foundations) | Foundations: SQL, HTML, JavaScript, and DOM | Complete |
 | [02](labs/02-http-methodology-and-traffic-capture) | HTTP, methodology, and traffic capture | Complete |
-| 03 | Footprinting and service enumeration | Complete |
-| 04 | Vulnerability testing with web scanners | Complete |
-| 05 | Manual review of scanner leads | Complete |
-| 06 | Cryptographic failures | Complete |
-| 07 | Injection attacks | Complete |
-| 08 | Cross-site scripting | Complete |
-| 09 | Identification and authentication failures | Complete |
-| 10 | Broken access control | Complete |
-| 11 | Miscellaneous web vulnerabilities | Complete |
-| 12 | Reporting and CVSS | Complete |
+| [03](labs/03-footprinting-and-vulnerability-testing) | Footprinting and service enumeration | Complete |
+| [04](labs/04-vulnerability-testing-with-web-scanners) | Vulnerability testing with web scanners | Complete |
+| [05](labs/05-manual-review-of-scanner-leads) | Manual review of scanner leads | Complete |
+| [06](labs/06-cryptographic-failures) | Cryptographic failures | Complete |
+| [07](labs/07-injection-attacks) | Injection attacks | Complete |
+| [08](labs/08-cross-site-scripting) | Cross-site scripting | Complete |
+| [09](labs/09-identification-and-authentication-failures) | Identification and authentication failures | Complete |
+| [10](labs/10-broken-access-control) | Broken access control | Complete |
+| [11](labs/11-miscellaneous-web-vulnerabilities) | Miscellaneous web vulnerabilities | Complete |
+| [12](labs/12-reporting-and-cvss) | Reporting and CVSS | Complete |
 
 ## Ethics Statement
 
 This repository is for defensive security learning and portfolio documentation. All tests are performed against systems I own or have explicit permission to use. Credentials, cookies, tokens, and sensitive values are removed or redacted before publication.
+
+## Portfolio Notes
+
+This repository is written for public review. It demonstrates practical testing in a local, authorized lab while avoiding harmful artifacts.
+
+The public evidence uses summaries, screenshots, row counts, headers, status codes, and remediation notes. Raw cookies, session tokens, credentials, packet captures, full decrypted values, and course-provided binaries are not committed.
+
