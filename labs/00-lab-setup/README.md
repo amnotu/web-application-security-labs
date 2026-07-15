@@ -47,3 +47,45 @@ curl -I http://192.168.198.128:3000
 curl -I http://192.168.198.128/DVWA
 
 curl -I http://192.168.198.128/bWAPP
+```
+## Results
+
+The ping test confirmed that Kali could reach the target VM.
+
+OWASP Juice Shop responded on port 3000 with:
+````text
+HTTP/1.1 200 OK
+````
+DVWA responded with a redirect to the login page:
+````text
+HTTP/1.1 302 Found
+````
+bWAPP responded with a redirect to the portal page:
+````text
+HTTP/1.1 302 Found
+````
+These results confirmed that the target VM was reachable and that the lab web applications were running.
+
+## Evidence
+
+Screenshots for this lab are stored in:
+````text
+assets/screenshots/00-lab-setup/
+````
+
+**Evidence files:**
+````text
+01-shared-folder-mount-and-fstab.png
+02-ping-target-host-only-success.png
+03-curl-juiceshop-http-200.png
+04-curl-dvwa-http-302-login-redirect.png
+05-curl-bwapp-http-302-portal-redirect.png
+````
+## Notes
+
+The testing stayed inside the local VMware lab.
+No public systems or third-party targets were tested.
+
+## Result
+
+The lab environment was ready for the next labs.
