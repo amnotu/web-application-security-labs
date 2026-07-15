@@ -150,20 +150,20 @@ Verify tables:
 `sudo mysql -u root -e "USE pencourse; SHOW TABLES;"`
 
 Open the HTML/JavaScript/DOM demo:
-
-`firefox labs/01-foundations/html-js-dom/foundations-demo.html`
-
+````bash
+firefox labs/01-foundations/html-js-dom/foundations-demo.html
+````
 ## Evidence
 
 | Evidence | What it shows |
 |---|---|
 | [`sql-database-setup-verification.txt`](evidence/sql-database-setup-verification.txt) | MariaDB version, database check, table list, and row counts. |
 | [`sql-schema-review.txt`](evidence/sql-schema-review.txt) | Table names and column structure. |
-| `sql-query-practice.txt` | Full sanitized SQL query-practice output. |
-| `sql-query-practice-summary.txt` | Short summary suitable for screenshot evidence. |
-| `html-js-dom-summary.txt` | Summary of the local HTML, JavaScript, and DOM test. |
-| `foundations-demo.html` | Local demo page used for HTML, JavaScript, and DOM review. |
-| `01-sql-database-loaded-and-tables-verified.png` | Screenshot showing the database was loaded and verified. |
+| [`sql-query-practice.txt`](evidence/sql-query-practice.txt) | Full sanitized SQL query-practice output. |
+| [`sql-query-practice-summary.txt`](evidence/sql-query-practice-summary.txt) | Short summary suitable for screenshot evidence. |
+| [`html-js-dom-summary.txt`](evidence/html-js-dom-summary.txt) | Summary of the local HTML, JavaScript, and DOM test. |
+| [`foundations-demo.html`](html-js-dom/foundations-demo.html) | Local demo page used for HTML, JavaScript, and DOM review. |
+| [`01-sql-database-loaded-and-tables-verified.png`](../../assets/screenshots/01-foundations/01-sql-database-loaded-and-tables-verified.png) | Screenshot showing the database was loaded and verified. |
 | `02-sql-query-practice-summary.png` | Screenshot showing the SQL query-practice summary. |
 | `03-html-js-dom-local-demo.png` | Screenshot showing the local page after JavaScript changed the DOM. |
 | `04-html-js-dom-summary.png` | Screenshot showing the HTML, JavaScript, and DOM summary. |
