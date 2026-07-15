@@ -97,7 +97,7 @@ This confirms that the traffic was sent from the Kali VM through its active netw
 
 | Evidence | What it shows |
 
-|---|---|
+|---|---:|
 
 | [`http-juiceshop-curl-observation.txt`](evidence/http-juiceshop-curl-observation.txt) | HTTP headers and verbose curl request/response flow. |
 
