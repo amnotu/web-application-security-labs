@@ -43,7 +43,7 @@ The project follows a PTES-style workflow:
 | 09 | Identification and authentication failures | Complete |
 | 10 | Broken access control | Complete |
 | 11 | Miscellaneous web vulnerabilities | Complete |
-| 12 | Reporting and CVSS | Not started |
+| 12 | Reporting and CVSS | Complete |
 
 ## Ethics Statement
 
