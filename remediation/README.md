@@ -6,13 +6,13 @@ The goal is not only to prove that a weakness exists. I also want to explain how
 
 Common remediation themes in this repo include:
 
-- Use parameterized queries for database access.
+- I use parameterized queries for database access.
 - Encode untrusted output before placing it into HTML or JavaScript.
-- Change default credentials before deployment.
-- Remove internal files from web-accessible paths.
-- Disable directory listing.
-- Add authorization checks before serving sensitive resources.
-- Use unique nonces for encryption.
-- Add clickjacking protections where needed.
+- I Changed default credentials before deployment.
+- Removing internal files from web-accessible paths.
+- I did disable directory listing.
+- I add authorization checks before serving sensitive resources.
+- The use of unique nonces for encryption.
+- Adding clickjacking protections where needed.
 
 The lab READMEs include the remediation notes for each specific test.
