@@ -10,7 +10,6 @@ Scores are based on the lab evidence in this repository and are intended for por
 | Reflected XSS behavior in DVWA | 08 | Medium | AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N | 5.4 | Benign script payload was reflected unencoded. |
 | Known default lab credential accepted | 09 | Critical if exposed | AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H | 9.8 | Expected in DVWA lab, but critical if present in exposed or production systems. |
 | Unauthenticated Juice Shop /ftp exposure | 10 | Medium | AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N | 5.3 | Directory listing and selected resources were reachable without authentication. |
-| Missing clickjacking headers | 11 | Informational / Needs validation | Not scored | N/A | Header gap observed. No iframe proof-of-concept or sensitive workflow exploitation was performed. |
 
 ## Scoring Notes
 
